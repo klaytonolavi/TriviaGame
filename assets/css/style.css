@@ -1,9 +1,17 @@
 body {
-	background-image: url(../images/wormz.png);
+	background-image: url(../images/food-background.jpg);
+}
+
+.QandA {
+	background-color: #ffff66;
+	margin-right: 200px;
+	margin-left: 200px;
 }
 
 .jumbotron {
 	background-color: #99ccff;
+	padding-top: 5px;
+	font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
@@ -17,6 +25,8 @@ h2 {
 .question1, .question2, .question3, .question4, .question5, .question6 {
 	text-align: center;
 	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
 
 }
 
