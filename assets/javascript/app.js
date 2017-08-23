@@ -1,4 +1,10 @@
+// create a start button that is only on the page at first
+
 // make array that contains questions and answers
+
+// after start is clicked, use jQuery to make the questions
+// and answers appear on the page
+
 
 // give correct answers to each question
 
