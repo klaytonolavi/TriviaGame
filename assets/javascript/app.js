@@ -1,8 +1,7 @@
 // create a start button that is only on the page at first
 
-
-$(".btn btn-secondary btn-sm btn-block").click(function(){
-    $("#qAndA").show();
+    $("#start").click(function(){
+        $("#qAndA").show();
 });
 
 
@@ -13,67 +12,68 @@ $(".btn btn-secondary btn-sm btn-block").click(function(){
 // });
     
 // make array that contains questions and answers
-var quiz = [
-	{ 
-		question: "Which of these is NOT a type of cheese?"
-		answers:[
-			{answer: "Cheddar", isCorrect: false},
-			{answer: "Manchego", isCorrect: false},
-			{answer: "Feta", isCorrect: false},
-			{answer: "Borronzo", isCorrect: true}
-		]
-	},
-	{
-		question: "Which country eats the most cheese in the world?"
-		answers:[
-			{answer: "France", isCorrect: true},
-			{answer: "United States", isCorrect: false},
-			{answer: "Turkey", isCorrect: false},
-			{answer: "Italy", isCorrect: false}
-		]
-	}
-	{
-		question: "Which cheese is most commonly found on pizza?"
-		answers:[
-			{answer: "Mozerella", isCorrect: true},
-			{answer: "Feta", isCorrect: false},
-			{answer: "Parmesan", isCorrect: false},
-			{answer: "Gorgonzola", isCorrect: false}
-		]
-	}
-	{
-		question: "Which US state produces the most cheese?"
-		answers:[
-			{answer: "Wisconsin", isCorrect: true},
-			{answer: "California", isCorrect: false},
-			{answer: "Florida", isCorrect: false},
-			{answer: "Colorado", isCorrect: false}
-		]
-	}
-	{
-		question: "Bandel, Paneer and Chhena are cheeses produced in which country?"
-		answers:[
-			{answer: "India", isCorrect: true},
-			{answer: "Turkey", isCorrect: false},
-			{answer: "Greece", isCorrect: false},
-			{answer: "Romania", isCorrect: false}
-		]
-	}
-	{
-		question: "Which country is the birthplace of Cheddar Cheese?"
-		answers:[
-			{answer: "United States", isCorrect: false},
-			{answer: "France", isCorrect: false},
-			{answer: "Italy", isCorrect: false},
-			{answer: "England", isCorrect: true}
-		]
-	}
-	];
+
+// var quiz = [
+// 	{ 
+// 		question: "Which of these is NOT a type of cheese?"
+// 		answers:[
+// 			{answer: "Cheddar", isCorrect: false},
+// 			{answer: "Manchego", isCorrect: false},
+// 			{answer: "Feta", isCorrect: false},
+// 			{answer: "Borronzo", isCorrect: true}
+// 		]
+// 	},
+// 	{
+// 		question: "Which country eats the most cheese in the world?"
+// 		answers:[
+// 			{answer: "France", isCorrect: true},
+// 			{answer: "United States", isCorrect: false},
+// 			{answer: "Turkey", isCorrect: false},
+// 			{answer: "Italy", isCorrect: false}
+// 		]
+// 	}
+// 	{
+// 		question: "Which cheese is most commonly found on pizza?"
+// 		answers:[
+// 			{answer: "Mozerella", isCorrect: true},
+// 			{answer: "Feta", isCorrect: false},
+// 			{answer: "Parmesan", isCorrect: false},
+// 			{answer: "Gorgonzola", isCorrect: false}
+// 		]
+// 	}
+// 	{
+// 		question: "Which US state produces the most cheese?"
+// 		answers:[
+// 			{answer: "Wisconsin", isCorrect: true},
+// 			{answer: "California", isCorrect: false},
+// 			{answer: "Florida", isCorrect: false},
+// 			{answer: "Colorado", isCorrect: false}
+// 		]
+// 	}
+// 	{
+// 		question: "Bandel, Paneer and Chhena are cheeses produced in which country?"
+// 		answers:[
+// 			{answer: "India", isCorrect: true},
+// 			{answer: "Turkey", isCorrect: false},
+// 			{answer: "Greece", isCorrect: false},
+// 			{answer: "Romania", isCorrect: false}
+// 		]
+// 	}
+// 	{
+// 		question: "Which country is the birthplace of Cheddar Cheese?"
+// 		answers:[
+// 			{answer: "United States", isCorrect: false},
+// 			{answer: "France", isCorrect: false},
+// 			{answer: "Italy", isCorrect: false},
+// 			{answer: "England", isCorrect: true}
+// 		]
+// 	}
+// 	];
 
 
 
 
-]
+// ]
 
 
 // after start is clicked, use jQuery to make the questions
