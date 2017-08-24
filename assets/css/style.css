@@ -2,17 +2,20 @@ body {
 	background-image: url(../images/food-background.jpg);
 }
 
-.QandA {
+#qAndA {
 	background-color: #ffff66;
 	margin-right: 200px;
 	margin-left: 200px;
+	display: none;
 }
 
 .jumbotron {
 	background-color: #99ccff;
 	padding-top: 5px;
 	font-family: 'Quicksand', sans-serif;
+	
 }
+
 
 h1 {
 	text-align: center;
