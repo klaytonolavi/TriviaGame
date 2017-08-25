@@ -2,78 +2,15 @@
 // after start is clicked, use jQuery to make the questions
 // and answers appear on the page
 
-// will not work???????
-    
-    
-// make array that contains questions and answers
-// give correct answers to each question
+
 var correctAnswers = 0;
 var wrongAnswers = 0;
+
 var clockRunning = false;
 var timeInterval;
 var number = 30;
 
-// var quiz = [
-// 	{ 
-// 		question: "Which of these is NOT a type of cheese?"
-// 		answers:[
-// 			{answer: "Cheddar", isCorrect: false},
-// 			{answer: "Manchego", isCorrect: false},
-// 			{answer: "Feta", isCorrect: false},
-// 			{answer: "Borronzo", isCorrect: true}
-// 		]
-// 	},
-// 	{
-// 		question: "Which country eats the most cheese in the world?"
-// 		answers:[
-// 			{answer: "France", isCorrect: true},
-// 			{answer: "United States", isCorrect: false},
-// 			{answer: "Turkey", isCorrect: false},
-// 			{answer: "Italy", isCorrect: false}
-// 		]
-// 	}
-// 	{
-// 		question: "Which cheese is most commonly found on pizza?"
-// 		answers:[
-// 			{answer: "Mozerella", isCorrect: true},
-// 			{answer: "Feta", isCorrect: false},
-// 			{answer: "Parmesan", isCorrect: false},
-// 			{answer: "Gorgonzola", isCorrect: false}
-// 		]
-// 	}
-// 	{
-// 		question: "Which US state produces the most cheese?"
-// 		answers:[
-// 			{answer: "Wisconsin", isCorrect: true},
-// 			{answer: "California", isCorrect: false},
-// 			{answer: "Florida", isCorrect: false},
-// 			{answer: "Colorado", isCorrect: false}
-// 		]
-// 	}
-// 	{
-// 		question: "Bandel, Paneer and Chhena are cheeses produced in which country?"
-// 		answers:[
-// 			{answer: "India", isCorrect: true},
-// 			{answer: "Turkey", isCorrect: false},
-// 			{answer: "Greece", isCorrect: false},
-// 			{answer: "Romania", isCorrect: false}
-// 		]
-// 	}
-// 	{
-// 		question: "Which country is the birthplace of Cheddar Cheese?"
-// 		answers:[
-// 			{answer: "United States", isCorrect: false},
-// 			{answer: "France", isCorrect: false},
-// 			{answer: "Italy", isCorrect: false},
-// 			{answer: "England", isCorrect: true}
-// 		]
-// 	}
-// 	];
 
-
-
-
-// ]
 
 // create a timer that starts on click
 // make the time remaining count down for 1 minute
@@ -106,27 +43,47 @@ $("#start").click(function(){
 
         //  ...run the stop function.
         stop();
-
-        //  Alert the user that time is up.
-        alert("Time Up!");
+     
       }
     }
 
     //  The stop function
     function stop() {
 
-      //  Clears our intervalId
-      //  We just pass the name of the interval
-      //  to the clearInterval function.
       clearInterval(timeInterval);
+     $("#qAndA").hide();
+     $(".results").show();
+
     }
 
-    
-    
-    
 
 
-// when the timer remaining reaches 0 then
-// create alert that shows the amount of questions
-// answered correctly and incorrectly.
+// lets try this
+
+// having trouble getting the score to show in .results div
+// cannot get this code to work for the first question
+function results() {
+
+// made a function that would check to see if the 4th radiobutton
+// checked and than increase correctAnswers and display it to the html
+    $("#radio_1-4").prop('checked', true); 
+
+	$("#radio_1-1, #radio_1-2", "#radio_1-3", "#radio_1-4", "#radio_1-5", "#radio_1-6").change(function () {
+        if ($("#radio_1-4").is(":checked")) {
+        	correctAnswers++;
+            $("#correctAnswers").html("<p>" + correctAnswers + "<p>");
+        }	
+        else {
+        	wrongAnswers++;
+        	$("#wrongAnswers").html("<p>" + wrongAnswers + "<p>");
+
+        }
+        
+        
+            
+    });        
+
+   }
+
+results();
 
