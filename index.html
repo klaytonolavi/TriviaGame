@@ -7,6 +7,7 @@
 
 
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/css/style.css">
 
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
@@ -17,12 +18,13 @@
 <body>
 <div class="container">
 	<div class="jumbotron">
-  		<h1>Trivia Game!</h1>
-			<h2>Time Remaining:</h2>
+  		<h1>Cheese Whiz Speed Quiz!</h1>
+			<p>Time Remaining:<span id="timer"></span></p>
 				<button id="start" type="button" class="btn btn-secondary btn-sm btn-block">Start!</button>
 </div>
 	</div>
-	
+
+
 <div id="qAndA">
 <div class="question1">
 	<p>Which of these is NOT a type of cheese?</p>
@@ -84,10 +86,13 @@
 	</div>
 </div>
 </div>
+	<!-- <div class="results">
+		<h3 id="correct">Questions answered correctly: </h3>
+		<h3 id="incorrect">Questions answered incorrectly: </h3>
+	</div> -->
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 <script src="assets/javascript/app.js"></script>
 </body>

@@ -1,17 +1,17 @@
 // create a start button that is only on the page at first
+// after start is clicked, use jQuery to make the questions
+// and answers appear on the page
 
-    $("#start").click(function(){
-        $("#qAndA").show();
-});
-
-
-
-
- // $("button").click(function(){
- //    $(".qAndA").show();
-// });
+// will not work???????
+    
     
 // make array that contains questions and answers
+// give correct answers to each question
+var correctAnswers = 0;
+var wrongAnswers = 0;
+var clockRunning = false;
+var timeInterval;
+var number = 30;
 
 // var quiz = [
 // 	{ 
@@ -75,16 +75,55 @@
 
 // ]
 
-
-// after start is clicked, use jQuery to make the questions
-// and answers appear on the page
-
-
-// give correct answers to each question
-
-// create a timer that starts 5 seconds after the page loads
-
+// create a timer that starts on click
 // make the time remaining count down for 1 minute
+
+
+		
+	
+$("#start").click(function(){
+	$("#qAndA").show();
+
+	function run() {
+      timeInterval = setInterval(decrement, 1000);
+			
+    }
+    run();
+});
+
+    //  The decrement function.
+    function decrement() {
+
+      //  Decrease number by one.
+      number--;
+
+      //  Show the number in the #show-number tag.
+      $("#timer").html("<h2>" + number + "</h2>");
+
+
+      //  Once number hits zero...
+      if (number === 0) {
+
+        //  ...run the stop function.
+        stop();
+
+        //  Alert the user that time is up.
+        alert("Time Up!");
+      }
+    }
+
+    //  The stop function
+    function stop() {
+
+      //  Clears our intervalId
+      //  We just pass the name of the interval
+      //  to the clearInterval function.
+      clearInterval(timeInterval);
+    }
+
+    
+    
+    
 
 
 // when the timer remaining reaches 0 then
